@@ -33,20 +33,20 @@ public class EmployeeController {
     }
 
     @GetMapping("/edit/{id}")
-    public String showEditForm(@PathVariable Long id, Model model) {
+    public String showEditForm(@PathVariable String id, Model model) {
         model.addAttribute("employee", employeeRepository.findById(id).orElse(null));
         return "employees/edit";
     }
 
     @PostMapping("/edit/{id}")
-    public String updateEmployee(@PathVariable Long id, @ModelAttribute Employee employee) {
+    public String updateEmployee(@PathVariable String id, @ModelAttribute Employee employee) {
         employee.setId(id);
         employeeRepository.save(employee);
         return "redirect:/employees";
     }
 
     @PostMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable Long id) {
+    public String deleteEmployee(@PathVariable String id) {
         employeeRepository.deleteById(id);
         return "redirect:/employees";
     }

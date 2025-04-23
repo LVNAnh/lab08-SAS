@@ -14,7 +14,8 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Add some sample data
+        employeeRepository.deleteAll();
+
         employeeRepository.save(new Employee(null, "Thomas Hardy", "thomashardy@mail.com",
                 "89 Chiaroscuro Rd, Portland, USA", "(171) 555-2222"));
         employeeRepository.save(new Employee(null, "Dominique Perrier", "dominiqueperrier@mail.com",
