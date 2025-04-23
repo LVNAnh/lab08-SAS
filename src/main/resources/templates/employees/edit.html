@@ -46,42 +46,26 @@
             method="post"
             th:object="${employee}"
           >
-            <div class="modal-body">
-              <div class="form-group">
-                <label>Name</label>
-                <input
-                  type="text"
-                  th:field="*{name}"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input
-                  type="email"
-                  th:field="*{email}"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label>Address</label>
-                <textarea
-                  th:field="*{address}"
-                  class="form-control"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <label>Phone</label>
-                <input
-                  type="text"
-                  th:field="*{phone}"
-                  class="form-control"
-                  required
-                />
-              </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" th:field="*{name}" class="form-control" required 
+                   title="Employee Name" placeholder="Enter employee name" />
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" th:field="*{email}" class="form-control" required 
+                   title="Employee Email" placeholder="Enter email address" />
+        </div>
+        <div class="form-group">
+            <label>Address</label>
+            <textarea th:field="*{address}" class="form-control" required 
+                      title="Employee Address" placeholder="Enter employee address"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" th:field="*{phone}" class="form-control" required 
+                   title="Employee Phone" placeholder="Enter phone number" />
+        </div>
             </div>
             <div class="modal-footer">
               <a href="/employees" class="btn btn-default">Cancel</a>
