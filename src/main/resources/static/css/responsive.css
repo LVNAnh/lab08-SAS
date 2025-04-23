@@ -1,6 +1,4 @@
-/* Styles responsives généraux pour l'application Employee Management */
 
-/* Styles pour les écrans moyens (tablettes) */
 @media screen and (max-width: 991px) {
     .container-xl, .container-fluid {
       padding: 0 10px;
@@ -22,7 +20,6 @@
     }
   }
   
-  /* Styles pour les écrans petits (mobiles) */
   @media screen and (max-width: 767px) {
     .table-wrapper {
       padding: 10px;
@@ -51,16 +48,14 @@
       padding: 8px 10px;
     }
     
-    /* Améliorer les formulaires pour mobile */
     .form-group {
       margin-bottom: 15px;
     }
     
     .form-control {
-      font-size: 16px; /* Pour éviter le zoom sur iOS */
+      font-size: 16px;
     }
     
-    /* Améliorer les modales */
     .modal-header, .modal-body, .modal-footer {
       padding: 15px;
     }
@@ -69,12 +64,10 @@
       margin: 10px;
     }
     
-    /* Ajustement des boutons */
     .btn {
       margin-bottom: 5px;
     }
     
-    /* Orientation verticale des boutons dans les footers */
     .modal-footer {
       flex-direction: column;
       align-items: stretch;
@@ -86,25 +79,22 @@
     }
   }
   
-  /* Styles pour les très petits écrans */
   @media screen and (max-width: 480px) {
     .table-title .btn span {
-      display: none; /* Cacher le texte des boutons, garder uniquement l'icône */
+      display: none; 
     }
     
     .table-title .btn i {
       margin-right: 0;
     }
     
-    /* Réduire les données affichées dans le tableau */
     table.table th:nth-child(3),
     table.table td:nth-child(3),
     table.table th:nth-child(4),
     table.table td:nth-child(4) {
-      display: none; /* Masquer certaines colonnes sur très petit écran */
+      display: none; 
     }
     
-    /* Ajustements spécifiques pour les boutons d'action */
     .btn {
       padding: 8px 12px;
       font-size: 12px;
@@ -113,19 +103,16 @@
       margin-bottom: 8px;
     }
     
-    /* Amélioration de la lisibilité */
     body {
       font-size: 14px;
     }
     
-    /* Espacement des formulaires */
     .form-group label {
       margin-bottom: 5px;
       font-weight: 500;
     }
   }
   
-  /* Styles pour les cartes d'affichage alternatif sur mobile */
   .employee-card {
     margin-bottom: 15px;
     border-radius: 5px;
@@ -152,7 +139,6 @@
     margin: 0 5px;
   }
   
-  /* Animation pour améliorer l'expérience utilisateur */
   .fade-in {
     animation: fadeIn 0.5s;
   }
@@ -162,25 +148,22 @@
     to { opacity: 1; }
   }
   
-  /* Amélioration des transitions lors du chargement */
   .page-transition {
     transition: all 0.3s ease-in-out;
   }
   
-  /* Amélioration de l'accessibilité */
   input:focus, textarea:focus, select:focus, button:focus {
     outline: 2px solid #007bff;
     outline-offset: 2px;
   }
   
-  /* Amélioration de l'apparence des champs de formulaire sur mobile */
   @media screen and (max-width: 767px) {
     input, textarea, select, button {
-      font-size: 16px !important; /* Évite le zoom sur iOS */
+      font-size: 16px !important; 
     }
     
     input[type="text"], input[type="email"], input[type="tel"], textarea {
-      -webkit-appearance: none; /* Élimine le style par défaut sur iOS */
+      -webkit-appearance: none;
       border-radius: 4px;
     }
   }

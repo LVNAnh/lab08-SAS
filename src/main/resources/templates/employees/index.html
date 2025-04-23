@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/main.js"></script>
     <style>
-      /* Styles responsives additionnels */
       @media screen and (max-width: 767px) {
         .table-wrapper {
           min-width: 100%;
@@ -52,7 +51,7 @@
 
         .table-responsive table {
           width: 100%;
-          min-width: 650px; /* Assure que la table reste lisible en scrollant */
+          min-width: 650px;
         }
 
         .modal-dialog {
@@ -65,27 +64,24 @@
           margin-bottom: 5px;
         }
 
-        /* Ajuster les colonnes pour l'affichage mobile */
         table.table th:nth-child(3),
         table.table td:nth-child(3) {
-          display: none; /* Masquer l'adresse sur mobile */
+          display: none; 
         }
       }
 
-      /* Pour les très petits écrans */
       @media screen and (max-width: 480px) {
         .table-title .btn span {
-          display: none; /* Cacher le texte des boutons, ne garder que l'icône */
+          display: none;
         }
 
         .table-title .btn i {
           margin-right: 0;
         }
 
-        /* Réduire encore plus le tableau */
         table.table th:nth-child(4),
         table.table td:nth-child(4) {
-          display: none; /* Masquer le téléphone aussi sur les très petits écrans */
+          display: none;
         }
       }
     </style>
